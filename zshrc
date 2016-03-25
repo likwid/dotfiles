@@ -1,6 +1,21 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+if [[ `uname` == 'Linux' ]]
+then
+        export LINUX=1
+        export GNU_USERLAND=1
+else
+        export LINUX=
+fi
+
+if [[ `uname` == 'Darwin' ]]
+then
+        export OSX=1
+else
+        export OSX=
+fi
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -50,15 +65,10 @@ source $ZSH/oh-my-zsh.sh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # hub
-eval "$(hub alias -s)"
+if which hub > /dev/null; then eval "$(hub alias -s)"; fi
 
 # vim bindings on shell
 # bindkey -v
-#
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit && compinit
-
-# archey
