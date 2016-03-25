@@ -7,19 +7,11 @@ alias av='ansible-vault'
 alias code='~/Dropbox/Code'
 alias gh='code && github.com'
 alias me='gh && likwid'
-alias hgn='gh && healthagentech'
-alias commerce='hgn && wellmatch_commerce'
-alias zs='gh && ZavalaSystems'
 alias bb='code && bitbucket.org/likwid'
-alias gsati='me && gsati-core'
-alias ofac='me && ofac'
 
 # dotfiles shortcuts
 alias ez='vim ~/.zshrc'
 alias sz='source ~/.zshrc'
-alias ea='vim $DOTFILES/zsh/aliases.zsh'
-alias ef='vim $DOTFILES/zsh/functions.zsh'
-alias ex='vim $DOTFILES/zsh/exports.zsh'
 
 # common
 alias ll='ls -la'
