@@ -19,10 +19,11 @@ set showmatch " show matching braces when text indicator is over them
 " set t_Co=256
 if &t_Co < 256
     colorscheme default
+    set background=dark
     set nocursorline " looks bad in this mode
 else
     set background=dark
-    let g:solarized_termcolors=256 " instead of 16 color with mapping in terminal
+    " let g:solarized_termcolors=256 " Have to comment this out on OSX
     colorscheme solarized
     " customized colors
     highlight SignColumn ctermbg=234
