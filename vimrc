@@ -22,8 +22,9 @@ if &t_Co < 256
     set background=dark
     set nocursorline " looks bad in this mode
 else
+    " This option doesn't seem to work for solarized-dark in my setup
+    " let g:solarized_termcolors=256 "
     set background=dark
-    " let g:solarized_termcolors=256 " Have to comment this out on OSX
     colorscheme solarized
     " customized colors
     highlight SignColumn ctermbg=234

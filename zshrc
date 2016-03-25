@@ -23,8 +23,8 @@ fi
 #ZSH_THEME="likwid"
 ZSH_THEME="robbyrussell"
 
-source .zsh/aliases.zsh
-source .zsh/exports.zsh
+source $HOME/.zsh/aliases.zsh
+source $HOME/.zsh/exports.zsh
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

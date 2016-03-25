@@ -1,7 +1,7 @@
 # Customize to your needs...
 #
 
-if [[ -z $LINUX && $LINUX -eq 1 ]]; then
+if [[ $LINUX == 1 ]]; then 
     export GOPATH=~/src/golang
 else
     export PACKER_CACHE_DIR='/Users/jgonzalez'

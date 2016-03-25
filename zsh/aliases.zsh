@@ -12,6 +12,8 @@ alias bb='code && bitbucket.org/likwid'
 # dotfiles shortcuts
 alias ez='vim ~/.zshrc'
 alias sz='source ~/.zshrc'
+alias aliases="cat ~/.zsh/aliases.zsh"
+alias exports="cat ~/.zsh/exports.zsh"
 
 # common
 alias ll='ls -la'
@@ -30,3 +32,12 @@ alias maketermfast='sudo rm /private/var/log/asl/*.asl'
 # git
 alias glod='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Creset: %s"'
 alias gap='git add -p'
+alias gpr='git pull --rebase'
+alias reset-authors='git commit --amend --reset-author -C HEAD'
+
+# Tmux
+alias tml='tmux ls'
+alias tmn='tmux new -s'
+alias tma='tmux attach -t'
+
+
