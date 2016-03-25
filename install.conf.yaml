@@ -1,5 +1,17 @@
 - clean: ['~']
 
 - link:
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.zsh: zsh/
+    ~/.oh-my-zsh: .oh-my-zsh/
+    ~/.oh-my-zsh/custom/themes/likwid.zsh-theme: 
+      create: true
+      path: zsh/themes/likwid.zsh-theme
 
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
 
