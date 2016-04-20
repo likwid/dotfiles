@@ -40,4 +40,8 @@ alias tml='tmux ls'
 alias tmn='tmux new -s'
 alias tma='tmux attach -t'
 
-
+# Secure mounting
+alias mountsecure='hdiutil attach ~/Dropbox/Private/SecureVol/ > /dev/null && echo "SecureVol Mounted"'
+alias unmountsecure='hdiutil eject /Volumes/Secure > /dev/null && echo "SecureVol Unmounted"'
+alias securemount='mountsecure'
+alias secureunmount='unmountsecure'
