@@ -6,7 +6,7 @@ if [[ $LINUX == 1 ]]; then
 else
     export PACKER_CACHE_DIR='/Users/jgonzalez'
     export GOPATH=~/Dropbox/Code/go
-    export JAVA_HOME="$(/usr/libexec/java_home)"
+    # export JAVA_HOME="$(/usr/libexec/java_home)"
     export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 fi
 
