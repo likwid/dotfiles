@@ -73,6 +73,9 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 # Enable aws autocomplete
 source /usr/local/share/zsh/site-functions/_aws
 
+# Enable tig autocomplete
+source /usr/local/share/zsh/site-functions/_tig
+
 # vim bindings on shell
 # bindkey -v
 
