@@ -83,7 +83,11 @@ endif
 map <Left> :echo "no! Use h"<cr>
 map <Right> :echo "no! Use l"<cr>
 map <Up> :echo "no! Use k"<cr>
-map <Down> :echo "no! j"<cr>
+map <Down> :echo "no! Use j"<cr>
+imap <Left> <nop>
+imap <Right> <nop>
+imap <Up> <nop>
+imap <Down> <nop>
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
@@ -119,6 +123,10 @@ let g:syntastic_mode_map = {
     \ 'active_filetypes': [],
     \ 'passive_filetypes': []
 \}
+
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 nnoremap <Leader>s :SyntasticCheck<CR>
 nnoremap <Leader>r :SyntasticReset<CR>

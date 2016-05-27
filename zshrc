@@ -70,11 +70,10 @@ if which hub > /dev/null; then eval "$(hub alias -s)"; fi
 # jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
-# Enable aws autocomplete
+# Enable autocompletes
 source /usr/local/share/zsh/site-functions/_aws
-
-# Enable tig autocomplete
 source /usr/local/share/zsh/site-functions/_tig
+source /usr/local/share/zsh/site-functions/_lein
 
 # vim bindings on shell
 # bindkey -v
