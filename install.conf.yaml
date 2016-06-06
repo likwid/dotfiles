@@ -14,6 +14,7 @@
     ~/.zshrc: zshrc
     ~/.zsh: zsh/
     ~/.oh-my-zsh: .oh-my-zsh/
+    ~/.iterm2_shell_integration.zsh: zsh/iterm2_shell_integration.zsh
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

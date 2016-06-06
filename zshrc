@@ -80,3 +80,5 @@ source /usr/local/share/zsh/site-functions/_lein
 
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit && compinit
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
