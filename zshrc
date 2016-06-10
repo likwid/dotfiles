@@ -71,9 +71,9 @@ if which hub > /dev/null; then eval "$(hub alias -s)"; fi
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 # Enable autocompletes
-source /usr/local/share/zsh/site-functions/_aws
-source /usr/local/share/zsh/site-functions/_tig
-source /usr/local/share/zsh/site-functions/_lein
+test -e /usr/local/share/zsh/site-functions/_aws && source /usr/local/share/zsh/site-functions/_aws
+test -e /usr/local/share/zsh/site-functions/_tig && source /usr/local/share/zsh/site-functions/_tig
+test -e /usr/local/share/zsh/site-functions/_lein && source /usr/local/share/zsh/site-functions/_lein
 
 # vim bindings on shell
 # bindkey -v
