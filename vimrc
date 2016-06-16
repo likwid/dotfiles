@@ -53,9 +53,9 @@ set wildmode=list:longest,full
 " Whitespace
 set cindent
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set ts=2
-set expandtab
+set noexpandtab
 
 " Searching
 set hlsearch

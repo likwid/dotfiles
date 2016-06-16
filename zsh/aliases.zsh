@@ -7,7 +7,9 @@ alias av='ansible-vault'
 alias code='~/Dropbox/Code'
 alias gh='code && github.com'
 alias me='gh && likwid'
+alias dti='gh && dtinteractive'
 alias wrk='code && github.dev.dealertrack.com'
+alias inventory='wrk && inventory'
 alias bb='code && bitbucket.org/likwid'
 
 # dotfiles shortcuts
