@@ -55,7 +55,7 @@ set cindent
 set expandtab
 set shiftwidth=2
 set ts=2
-set noexpandtab
+set expandtab
 
 " Searching
 set hlsearch
