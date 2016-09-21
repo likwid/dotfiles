@@ -5,9 +5,9 @@ alias av='ansible-vault'
 
 # code and projects
 alias code='~/Dropbox/Code'
-alias gh='code && github.com'
-alias me='gh && likwid'
-alias dti='gh && dtinteractive'
+alias github='code && github.com'
+alias me='github && likwid'
+alias dti='github && dtinteractive'
 alias cox='code && ghe.coxautoinc.com'
 alias wrk='code && github.dev.dealertrack.com'
 alias inventory='wrk && inventory'
