@@ -32,4 +32,9 @@ cask 'virtualbox'
 cask 'vagrant'
 cask 'sequel-pro'
 
-mas 'cinch', id: 412529613
+mas 'Cinch', id: 412529613
+mas 'Jettison', id: 447430809
+mas 'DaisyDisk', id: 411643860
+mas 'Microsoft Remote Desktop', id: 715768417
+mas 'Slack', id: 803453959
+mas 'Pixelmator', id: 407963104
