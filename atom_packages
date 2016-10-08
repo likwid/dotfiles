@@ -1,4 +1,3 @@
-apm install editorconfig
-apm install linter-eslint
-
-apm install linter
+editorconfig
+linter-eslint
+linter

@@ -7,6 +7,7 @@ cask 'java'
 
 brew 'ansible'
 brew 'editorconfig'
+brew 'golang'
 brew 'gradle'
 brew 'hub'
 brew 'libyaml'
