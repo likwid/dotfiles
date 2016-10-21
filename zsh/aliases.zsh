@@ -49,3 +49,9 @@ alias mountsecure='hdiutil attach ~/Dropbox/Private/SecureVol/ > /dev/null && ec
 alias unmountsecure='hdiutil eject /Volumes/Secure > /dev/null && echo "SecureVol Unmounted"'
 alias securemount='mountsecure'
 alias secureunmount='unmountsecure'
+
+#Utility functions
+function convert_pem_to_pub {
+  ssh-keygen -y -f $1 > $2
+}
+alias pem2pub=convert_pem_to_pub

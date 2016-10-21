@@ -42,6 +42,7 @@ endif
 
 filetype plugin indent on " enable file type detection
 set autoindent
+set autowrite
 
 " Basic editing config
 set nu " number lines
