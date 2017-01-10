@@ -21,7 +21,9 @@ fi
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="likwid"
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_CUSTOM=$HOME/.zsh
+ZSH_THEME="bullet-train"
 
 source $HOME/.zsh/aliases.zsh
 source $HOME/.zsh/exports.zsh
