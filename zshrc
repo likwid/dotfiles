@@ -84,6 +84,7 @@ fpath=(/usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit && compinit
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+test -e "${HOME}/.zshrc.local" && source "${HOME}/.zshrc.local"
 
 hitch() {
   command hitch "$@"
