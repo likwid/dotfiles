@@ -10,3 +10,4 @@ else
 fi
 
 export PATH=/usr/local/sbin:$PATH:$GOPATH:~/bin
+export EDITOR=/usr/bin/vim
