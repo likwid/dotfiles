@@ -129,6 +129,9 @@ let g:syntastic_mode_map = {
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" Terraform
+let g:terraform_fmt_on_save = 1
+
 nnoremap <Leader>s :SyntasticCheck<CR>
 nnoremap <Leader>r :SyntasticReset<CR>
 nnoremap <Leader>i :SyntasticInfo<CR>
