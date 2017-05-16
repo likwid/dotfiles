@@ -75,6 +75,9 @@ set noswapfile
 set splitright
 set splitbelow
 
+" makefile
+" autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
 if &term =~ '^screen'
     " tmux knows the extended mouse mode
     set ttymouse=xterm2

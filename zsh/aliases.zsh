@@ -4,16 +4,17 @@ alias agx='ansible-galaxy'
 alias av='ansible-vault'
 
 # code and projects
-alias code='~/Dropbox/Code'
-alias gh='code && github.com'
+alias mycode='~/Dropbox/Code'
+alias gh='mycode && github.com'
 alias me='gh && likwid'
 alias dti='gh && dtinteractive'
-alias ghe='code && ghe.coxautoinc.com'
+alias ghe='mycode && ghe.coxautoinc.com'
 alias gheme='ghe && jeff-gonzalez'
 alias des='ghe && data-engineering-services'
-alias wrk='code && github.dev.dealertrack.com'
+alias ds='ghe && data-solutions'
+alias wrk='mycode && github.dev.dealertrack.com'
 alias inventory='wrk && inventory'
-alias bb='code && bitbucket.org/likwid'
+alias bb='mycode && bitbucket.org/likwid'
 
 # dotfiles shortcuts
 alias ez='vim ~/.zshrc'

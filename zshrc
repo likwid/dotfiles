@@ -91,3 +91,4 @@ hitch() {
     if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
 }
 alias unhitch='hitch -u'
+export PATH=$PATH:/usr/local/share/dotnet

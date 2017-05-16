@@ -30,11 +30,13 @@ cask 'alfred'
 cask 'atom'
 cask 'dash'
 cask 'dropbox'
+cask 'gitter'
 cask 'iterm2'
 cask 'screenhero'
 cask 'sequel-pro'
 cask 'skype'
 cask 'virtualbox'
+cask 'visual-studio-code'
 cask 'vagrant'
 
 mas 'Cinch', id: 412529613
