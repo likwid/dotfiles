@@ -2,3 +2,11 @@ editorconfig
 linter-eslint
 linter
 atom-elixir
+vim-mode-plus
+highlight-selected
+minimap
+minimap-highlight-selected
+ternjs
+hyperclick
+linter-ui-default
+busy-signal
