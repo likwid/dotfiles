@@ -6,7 +6,7 @@ vim-mode-plus
 highlight-selected
 minimap
 minimap-highlight-selected
-ternjs
+tern
 hyperclick
 linter-ui-default
 busy-signal

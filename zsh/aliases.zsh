@@ -58,3 +58,10 @@ function convert_pem_to_pub {
   ssh-keygen -y -f $1 > $2
 }
 alias pem2pub=convert_pem_to_pub
+
+#Hitch for multiple git authors
+hitch() {
+  command hitch "$@"
+    if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+}
+alias unhitch='hitch -u'

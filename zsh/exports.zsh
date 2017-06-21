@@ -1,11 +1,22 @@
-# Customize to your needs...
-#
+if [[ `uname` == 'Linux' ]]
+then
+        export LINUX=1
+        export GNU_USERLAND=1
+else
+        unset LINUX
+fi
+
+if [[ `uname` == 'Darwin' ]]
+then
+        export OSX=1
+else
+        unset OSX
+fi
 
 if [[ $LINUX == 1 ]]; then 
     export GOPATH=~/src/golang
 else
     export GOPATH=~/Dropbox/Code
-    # export JAVA_HOME="$(/usr/libexec/java_home)"
     export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 fi
 
@@ -15,3 +26,4 @@ if [[ -a /usr/local/bin/vim ]]; then
 else
   export EDITOR=/usr/bin/vim
 fi
+
