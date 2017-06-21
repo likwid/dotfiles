@@ -2,6 +2,7 @@ BULLETTRAIN_PROMPT_ORDER=(
   context
   dir
   git
+  virtualenv
 )
 BULLETTRAIN_PROMPT_CHAR=\λ
 BULLETTRAIN_CONTEXT_HOSTNAME=%m
