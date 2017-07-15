@@ -1,0 +1,10 @@
+BULLETTRAIN_DIR_CONTEXT_SHOW=true
+
+# Pyenv
+[ -s ~/.pyenv_profile ] && source ~/.pyenv_profile
+
+# nvm
+[ -s ~/.nvm_profile ] && source ~/.nvm_profile
+
+#linux brew
+[ -s ~/.linuxbrew_profile ] && source ~/.linuxbrew_profile
