@@ -1,25 +1,27 @@
 [alias]
-  st = status
+  add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
+  br = branch
   ci = commit
   co = checkout
   cp = cherry-pick
-  put = push origin HEAD
-  fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
-  squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
   doff = reset head^
-  ri = rebase --interactive
-  br = branch
-  pruneremote = remote prune origin
-  tree = log --graph --oneline --decorate --color --all
-  tr = log --graph --oneline --decorate --color
-  unpushed = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git log origin/$PROJ_BRANCH..HEAD"
-  unpulled = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git fetch && git log HEAD..origin/$PROJ_BRANCH"
-  add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
+  fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
   ln = log --pretty=format:'%Cblue%h %Cred* %C(yellow)%s'
+  pruneremote = remote prune origin
+  put = push origin HEAD
   reset-authors = commit --amend --reset-author -CHEAD
+  ri = rebase --interactive
   rmbranch = "!f(){ git branch -d ${1} && git push origin --delete ${1}; };f"
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
-  yolo = "push --force origin master"
+  squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+  st = status
+	track = "update-index --no-assume-unchanged"
+  tree = log --graph --oneline --decorate --color --all
+  tr = log --graph --oneline --decorate --color
+  unpulled = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git fetch && git log HEAD..origin/$PROJ_BRANCH"
+  unpushed = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git log origin/$PROJ_BRANCH..HEAD"
+	untrack = "update-index --assume-unchanged"
+	yolo = "push --force origin master"
 
 [color]
 ui = true
