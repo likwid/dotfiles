@@ -47,6 +47,23 @@ alias tml='tmux ls'
 alias tmn='tmux new -s'
 alias tma='tmux attach -t'
 
+function devops_tmux_new {
+  tmux -S /opt/tmux/$USER new
+  chown $USER:devops /opt/tmux/$USER
+}
+
+function devops_attach {
+  tmux -S /opt/tmux/$1 attach
+}
+
+function devops_ls {
+  tmux -S /opt/tmux/$1 ls
+}
+
+alias dtmn=devops_tmux_new
+alias dtml=devops_ls
+alias dtma=devops_attach
+
 # Secure mounting
 alias mountsecure='hdiutil attach ~/Dropbox/Private/SecureVol/ > /dev/null && echo "SecureVol Mounted"'
 alias unmountsecure='hdiutil eject /Volumes/Secure > /dev/null && echo "SecureVol Unmounted"'
