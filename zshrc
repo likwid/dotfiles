@@ -21,3 +21,5 @@ test -e /usr/local/share/zsh/site-functions/_lein && source /usr/local/share/zsh
 # bindkey -v
 
 [ -s ~/.zshrc.local ] && source ~/.zshrc.local
+
+export PATH=~/spark-2.2.0-bin-hadoop2.7/bin:$PATH
