@@ -8,7 +8,6 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
-    ~/.gitconfig.local: gitconfig.local
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.vimrc: vimrc
