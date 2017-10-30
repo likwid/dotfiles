@@ -1,27 +1,27 @@
 [alias]
-  add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
-  br = branch
-  ci = commit
-  co = checkout
-  cp = cherry-pick
-  doff = reset head^
-  fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
-  ln = log --pretty=format:'%Cblue%h %Cred* %C(yellow)%s'
-  pruneremote = remote prune origin
-  put = push origin HEAD
-  reset-authors = commit --amend --reset-author -CHEAD
-  ri = rebase --interactive
-  rmbranch = "!f(){ git branch -d ${1} && git push origin --delete ${1}; };f"
-  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
-  squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
-  st = status
-	track = "update-index --no-assume-unchanged"
-  tree = log --graph --oneline --decorate --color --all
-  tr = log --graph --oneline --decorate --color
-  unpulled = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git fetch && git log HEAD..origin/$PROJ_BRANCH"
-  unpushed = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git log origin/$PROJ_BRANCH..HEAD"
-	untrack = "update-index --assume-unchanged"
-	yolo = "push --force origin master"
+add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
+br = branch
+ci = commit
+co = checkout
+cp = cherry-pick
+doff = reset head^
+fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+ln = log --pretty=format:'%Cblue%h %Cred* %C(yellow)%s'
+pruneremote = remote prune origin
+put = push origin HEAD
+reset-authors = commit --amend --reset-author -CHEAD
+ri = rebase --interactive
+rmbranch = "!f(){ git branch -d ${1} && git push origin --delete ${1}; };f"
+snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+st = status
+track = "update-index --no-assume-unchanged"
+tree = log --graph --oneline --decorate --color --all
+tr = log --graph --oneline --decorate --color
+unpulled = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git fetch && git log HEAD..origin/$PROJ_BRANCH"
+unpushed = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git log origin/$PROJ_BRANCH..HEAD"
+untrack = "update-index --assume-unchanged"
+yolo = "push --force origin master"
 
 [color]
 ui = true
@@ -30,14 +30,15 @@ ui = true
 default = simple
 
 [core]
-	excludesfile = /Users/jeff.gonzalez/.gitignore_global
+excludesfile = /Users/jeff.gonzalez/.gitignore_global
 
 # Allow local customizations in the .gitconfig_local file
 [include]
 path = ~/.gitconfig.local
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+trustExitCode = true
+
+[url "ssh://git@ghe.coxautoinc.com/"]
+insteadOf = ghe://

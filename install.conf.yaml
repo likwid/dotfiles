@@ -8,10 +8,12 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+    ~/.gitconfig.local: gitconfig.local
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.zshrc.local: zshrc.local
     ~/.zsh: zsh/
     ~/.oh-my-zsh: .oh-my-zsh/
     ~/.iterm2_shell_integration.zsh: zsh/iterm2_shell_integration.zsh
