@@ -37,3 +37,6 @@
 [submodule "vim/bundle/vim-terraform"]
 	path = vim/bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform
+[submodule "vim/bundle/vim-hclfmt"]
+	path = vim/bundle/vim-hclfmt
+	url = https://github.com/fatih/vim-hclfmt
