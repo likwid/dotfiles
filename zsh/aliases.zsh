@@ -41,6 +41,8 @@ alias glod='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%C
 alias gap='git add -p'
 alias gpr='git pull --rebase'
 alias reset-authors='git commit --amend --reset-author -C HEAD'
+alias untrack='git update-index --assume-unchanged'
+alias track='git update-index --no-assume-unchanged'
 
 # Tmux
 alias tml='tmux ls'
