@@ -22,4 +22,4 @@ test -e /usr/local/share/zsh/site-functions/_lein && source /usr/local/share/zsh
 
 [ -s ~/.zshrc.local ] && source ~/.zshrc.local
 
-export PATH=~/spark-2.2.0-bin-hadoop2.7/bin:$PATH
+export PATH=/usr/local/go/bin:$PATH
