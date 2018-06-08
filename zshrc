@@ -17,9 +17,12 @@ test -e /usr/local/share/zsh/site-functions/_aws && source /usr/local/share/zsh/
 test -e /usr/local/share/zsh/site-functions/_tig && source /usr/local/share/zsh/site-functions/_tig
 test -e /usr/local/share/zsh/site-functions/_lein && source /usr/local/share/zsh/site-functions/_lein
 
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
 # vim bindings on shell
 # bindkey -v
 
 [ -s ~/.zshrc.local ] && source ~/.zshrc.local
 
-export PATH=/usr/local/go/bin:$PATH
+export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
