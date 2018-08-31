@@ -29,9 +29,11 @@ cask 'alfred'
 cask 'atom'
 cask 'dash'
 cask 'dropbox'
+cask 'firefox'
 cask 'keybase'
 cask 'gitter'
 cask 'google-chrome'
+cask 'google-cloud-sdk'
 cask 'insomnia'
 cask 'iterm2'
 cask 'sequel-pro'
@@ -43,6 +45,6 @@ cask 'vagrant'
 mas 'Cinch', id: 412529613
 mas 'DaisyDisk', id: 411643860
 mas 'Jettison', id: 447430809
-mas 'Microsoft Remote Desktop', id: 129503466
+#mas 'Microsoft Remote Desktop', id: 129503466
 mas 'Pixelmator', id: 407963104
 mas 'Slack', id: 803453959

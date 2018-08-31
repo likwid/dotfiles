@@ -16,7 +16,7 @@ fi
 if [[ $LINUX == 1 ]]; then 
     export GOPATH=~/go
 else
-    export GOPATH=~/Dropbox/Code
+    export GOPATH=~/go
     export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 fi
 
